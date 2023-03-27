@@ -1,0 +1,262 @@
+body {
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blackout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 3;
+  opacity: 0.5;
+}
+.modal-container {
+  position: relative;
+  width: 853px;
+  height: 640px;
+  z-index: 4;
+  background: #fffaf0;
+  min-height: 300px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.pokahz {
+  width: 360px;
+  height: 623px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.title-modal {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+}
+.container {
+  min-height: 400px;
+}
+.center-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #FFFAF0;
+}
+.button-green {
+  margin: 5px 0;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button-green:hover {
+  background-color: #3e8e41;
+}
+.form-input {
+  margin: 15px 0;
+}
+.form-input label,
+.form-input span {
+  display: block;
+}
+.modal-form .error {
+  color: red;
+}
+.form-modal {
+  width: 100%;
+}
+.form-modal input {
+  width: 100%;
+}
+
+.header-catalog {
+  width: 75%;
+  padding-bottom: 5%;
+}
+
+.title-product {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 86px;
+  line-height: 85px;
+  border-left: 0.5rem solid #52341E;
+  padding-left: 1rem;
+}
+
+.card-link-wrapper {
+  min-height: 502px;
+}
+
+.card {
+  width: 360px;
+  max-width: 100%;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  flex-direction: row;
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+}
+.card img:not(.cart-image,.img-favorite) {
+  height: 200px;
+}
+
+.card-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23.2324px;
+  line-height: 27px;
+}
+
+.card-description {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9.12703px;
+  line-height: 14px;
+}
+
+.card-image,
+.card-title,
+.card-price {
+  text-align: center;
+}
+.card-title,
+.card-price {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.card-description {
+  margin-bottom: 30px;
+}
+.card-price {
+  color: #52341E;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 16.5946px;
+  line-height: 25px;
+  text-align: left;
+  font-weight: 600;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+}
+
+.card-favorite-button {
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.img-favorite {
+  position: absolute;
+  height: 20px;
+  right: 0;
+}
+
+.cart-image {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.product-info {
+  display: flex;
+  padding: 50px 0;
+}
+.product-image {
+  width: 50%;
+  text-align: center;
+}
+.product-text {
+  width: 50%;
+}
+.product-image img {
+  max-width: 100%;
+  height: 400px;
+}
+.product-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 25px auto;
+}
+.product-description {
+  margin: 25px 0;
+}
+.product-buttons {
+  display: flex;
+  margin: 70px 0;
+}
+.product-buttons > div {
+  width: 50%;
+  text-align: center;
+}
+.product-price {
+  font-size: 30px;
+  font-weight: 600;
+  color: red;
+}
+.product-buy-button {
+  width: 200px;
+  height: 48px;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.product-buy-button:hover {
+  background-color: cornflowerblue;
+}
+.back {
+  text-align: center;
+  margin: 20px 0;
+  color: blue;
+  cursor: pointer;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
